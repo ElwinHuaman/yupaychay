@@ -35,7 +35,7 @@ sections:
         color: "navy"
         image:
           # Add your image background to `assets/media/`.
-          filename: alpaca.jpg
+          filename: background.jpg
           filters:
             brightness: 0.5
   # - block: stats

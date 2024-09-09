@@ -35,7 +35,7 @@ sections:
         color: "navy"
         image:
           # Add your image background to `assets/media/`.
-          filename: comunidad.jpg
+          filename: alpaca.jpg
           filters:
             brightness: 0.4
   # - block: stats

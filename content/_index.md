@@ -10,7 +10,7 @@ design:
 sections:
   - block: hero
     content:
-      title: Yupaychay - Quechua Network
+      title: Yupaychay </br> Quechua Network
       text: "🦙 We aim to engage in projects for the emancipation of Quechua communities by publicising their work and promoting the exchange of knowledge between the Andes and other cultures 🦙"
       primary_action:
         text: Stay Tuned
@@ -20,10 +20,10 @@ sections:
         text: Work in progress
         url: "/"
       announcement:
-        text: "More great news are comming soon."
-        link:
-          text: "Read more"
-          url: "/"          
+        text: "Great news are comming soon."
+        # link:
+        #   text: "Read more"
+        #   url: "/"          
           # url: "/blog/"
     design:
       spacing:

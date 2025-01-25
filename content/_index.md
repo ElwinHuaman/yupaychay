@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: resume-biography-2
     content:
-      title: 👋 Hey, we’re Yupaychay
+      title: 👋 We’re Yupaychay
       # Note: `username` refers to the user's folder name in `content/authors/`
       username: admin
     design:

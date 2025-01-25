@@ -8,11 +8,11 @@ noVendor: "github.com/HugoBlox/hugo-blox-builder/**"
 private: "github.com/HugoBlox/all-access/blox-all-access"
 
 imports:
-  # Add the Decap CMS module below, if it has not already been added:
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
   - path: github.com/HugoBlox/all-access/blox-all-access
+  # Add the Decap CMS module below, if it has not already been added:
+  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:

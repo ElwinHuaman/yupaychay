@@ -171,12 +171,12 @@ awards:
 
 ## I live in San Francisco, designing large language models at OpenAI.
 
-I am a research scientist at Open AI where I am currently working on training ChatGPT v100.
+🦙 We aim to engage in projects for the emancipation of Quechua communities by publicising their work and promoting the exchange of knowledge between the Andes and other cultures 🦙
 
-My research interests include:
+Our working areas are:
 
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Women Empowerment
+- Quechua Communities
+- Minoritized Languages
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie lacus nec finibus bibendum. Nullam turpis nibh, viverra quis libero at, pharetra laoreet magna.
+Yupaychay is a Quechua word, that means to thank, to honor, but also to respect and to count. We want to respect our traditions and make them count in the digital era.

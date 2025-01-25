@@ -5,17 +5,17 @@
 
 # Appearance
 appearance:
-  mode: light
-  color: indigo
+  mode: system
+  color: green
 
 # SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'Yupaychay'
-    description: 'Yupaychay aims to empower Quechua communities in the Andes.'
-    twitter: ''
+    org_name: ''
+    description: 'A highly-customizable Hugo blog theme powered by Hugo Blox Builder.'
+    twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -30,26 +30,34 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: "navbar"
-    align: "center"
-    fixed_to_top: true
-    logo:
-      text: "Yupaychay"
-      # Logo filename in `assets/media/` folder
-      # filename: "logo.svg"
-    button:
-      enable: true
-      text: "Subscribe"
-      url: "/"
     show_search: true
     show_theme_chooser: true
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Yupaychay'
+    notice: '© {year} Me. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
 
 # Localization
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
+
+# Site features
+features:
+  syntax_highlighter:
+    theme_light: github-light
+    theme_dark: github-dark
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+  repository:
+    url: 'https://github.com/<username>/<repository>'
+    content_dir: content
+    branch: main

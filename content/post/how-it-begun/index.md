@@ -8,12 +8,12 @@ summary: >-
 
   Do you ever wondered how the inka spoke, you are an alpaca breeder and what to learn how to best treat your alpaca in the most natural way, you are interested in learning new techniques for your knitting projects, or maybe you are just passionate about nature, and you want to support sustainable farming in Peru by buying garment to fair prices… Yupaychay – Quechua Network is the bridge to walk!
 draft: false
-featured: true
+featured: false
 authors:
-  - elena
+  - admin
 image:
   filename: close-up-wool-texture-details_23-2149503188.jpg
-  focal_point: smart
+  focal_point: Smart
   preview_only: false
   caption: image 1
 ---

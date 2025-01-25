@@ -1,28 +1,28 @@
 ---
 # Display name
-title: 吳健雄
+title: Yupaychay
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Yu Pay Chay
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Yupaychay
+last_name: 
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🦙
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: Quechua Network
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: Association
+    url: https://yupaychay.org/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.

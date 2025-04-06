@@ -171,7 +171,7 @@ awards:
 
 ## I live in San Francisco, designing large language models at OpenAI.
 
-🦙 We aim to engage in projects for the emancipation of Quechua communities by publicising their work and promoting the exchange of knowledge between the Andes and other cultures 🦙
+🦙 I am an Italian physicist who studied in Austria and currently works there. In my free time, I enjoy exploring new languages, crafting and anything that makes my creativity flies. In 2024, I co-founded Yupaychay-Quechua Network, reflecting my commitment to cultural preservation and community building. 🦙
 
 Our working areas are:
 

@@ -7,17 +7,17 @@ type: landing
 sections:
   - block: resume-biography-2
     content:
-      title: 👋 Hey, I’m Shiung
+      title: 👋 Hey, I’m Elena
       # Note: `username` refers to the user's folder name in `content/authors/`
-      username: admin
+      username: elena
     design:
       spacing:
         padding: [0, 0, 0, 0]
   - block: resume-biography-2
     content:
-      title: 👋 Hey, I’m Shiung
+      title: 👋 Hey, I’m Elwin
       # Note: `username` refers to the user's folder name in `content/authors/`
-      username: elena
+      username: elwin
     design:
       spacing:
         padding: [0, 0, 0, 0]

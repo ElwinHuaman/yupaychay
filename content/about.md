@@ -13,4 +13,12 @@ sections:
     design:
       spacing:
         padding: [0, 0, 0, 0]
+  - block: resume-biography-2
+    content:
+      title: 👋 Hey, I’m Shiung
+      # Note: `username` refers to the user's folder name in `content/authors/`
+      username: elena
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
 ---

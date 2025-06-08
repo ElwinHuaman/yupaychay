@@ -169,7 +169,7 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## I live in San Francisco, designing large language models at OpenAI.
+## Bridging Ancient Wisdom and Modern Technology.
 
 🦙 We aim to engage in projects for the emancipation of Quechua communities by publicising their work and promoting the exchange of knowledge between the Andes and other cultures 🦙
 
@@ -179,4 +179,15 @@ Our working areas are:
 - Quechua Communities
 - Minoritized Languages
 
-Yupaychay is a Quechua word, that means to thank, to honor, but also to respect and to count. We want to respect our traditions and make them count in the digital era.
+Yupaychay is a Quechua word that means to thank, to honor, but also to respect and to count. We want to respect our traditions and make them count in the digital era.
+
+## Who Is This For?
+
+Yupaychay is for anyone who:
+
+| Interest | Benefit |
+|----------|---------|
+| Language learners | Discover Quechua and Inka heritage |
+| Alpaca breeders | Learn natural raising techniques |
+| Textile lovers | Support fair-trade artisans |
+| Sustainability advocates | Connect with ethical farming |

@@ -14,3 +14,13 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
 ---
+## Who Is This For?
+
+Yupaychay is for anyone who:
+
+| Interest | Benefit |
+|----------|---------|
+| Language learners | Discover Quechua and Inka heritage |
+| Alpaca breeders | Learn natural raising techniques |
+| Textile lovers | Support fair-trade artisans |
+| Sustainability advocates | Connect with ethical farming |

@@ -30,8 +30,16 @@ profiles:
   - icon: at-symbol
     url: 'mailto:yupaychay.quechua@gmail.com'
     label: E-mail Me
+#  - icon: brands/x
+#    url: https://twitter.com/GetResearchDev
+#  - icon: brands/github
+#    url: https://github.com/gcushen
+#  - icon: brands/linkedin
+#    url: https://www.linkedin.com/
   - icon: brands/instagram
     url: https://www.instagram.com/yupaychay.quechua
+  - icon: brands/facebook
+    url: https://www.facebook.com/people/Yupaychay-QuechuaNetwork/61577271412913
 
 education:
   - area: PhD Artificial Intelligence
@@ -174,14 +182,3 @@ Our working areas are:
 - Minoritized Languages
 
 Yupaychay is a Quechua word that means to thank, to honor, but also to respect and to count. We want to respect our traditions and make them count in the digital era.
-
-## Who Is This For?
-
-Yupaychay is for anyone who:
-
-| Interest | Benefit |
-|----------|---------|
-| Language learners | Discover Quechua and Inka heritage |
-| Alpaca breeders | Learn natural raising techniques |
-| Textile lovers | Support fair-trade artisans |
-| Sustainability advocates | Connect with ethical farming |

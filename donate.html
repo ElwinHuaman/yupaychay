@@ -255,7 +255,7 @@
 
             // Replace 'YOUR_PAYPAL_BUSINESS_ID' with your actual PayPal email or merchant ID.
             const paypalBusinessId = 'elwin.huaman@hotmail.com';
-            const donationUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalBusinessId)}&item_name=Donation&amount=${encodeURIComponent(selectedAmount)}&currency_code=USD`;
+            const donationUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalBusinessId)}&item_name=Donation&amount=${encodeURIComponent(selectedAmount)}&currency_code=EUR`;
 
             // Redirect the user to the PayPal donation page
             window.location.href = donationUrl; 

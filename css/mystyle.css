@@ -9,6 +9,26 @@ body {
     background-image: url('https://yupaychay.org/img/yupaychay-21.jpg');
 }
 
+.hero-about-us-bg {
+    background-image: url('https://yupaychay.org/img/yupaychay-18.jpg');
+}
+
+.hero-programs-bg {
+    background-image: url('https://yupaychay.org/img/yupaychay-10.jpg');
+}
+
+.hero-contact-bg {
+    background-image: url('https://yupaychay.org/img/yupaychay-1.jpg');
+}
+
+.hero-donate-bg {
+    background-image: url('https://yupaychay.org/img/yupaychay-19.jpg');
+}
+
+.hero-blog-bg {
+    background-image: url('https://yupaychay.org/img/yupaychay-17.jpg');
+}
+
 .carousel-item {
     display: none;
 }

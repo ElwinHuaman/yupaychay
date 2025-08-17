@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Yupaychay Quechua Network</title>
+    <link rel="icon" type="image/png" href="logo.ico">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The Yupaychay Association engages in projects for the emancipation of Quechua communities by sharing their work, language, culture, and promoting the exchange of knowledge between the Andes and other cultures.">
+    <meta name="keywords" content="Quechua, Quechua language, Indigenous culture, Andes, Peru, Puno, cultural preservation, nonprofit, donate">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+    
+    <!-- Essential SEO Schema.org Markup -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Yupaychay Quechua Network",
+          "url": "http://yupaychay.org/",
+          "logo": "http://yupaychay.org/logo.png",
+          "sameAs": [
+            "https://www.facebook.com/yupaychay.quechua",
+            "https://twitter.com/yupaychay.quechua",
+            "https://www.instagram.com/yupaychay.quechua"
+          ]
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center space-x-1 text-2xl font-bold">
+                  <img src="logo.png" alt="Yupaychay | Quechua Network" class="h-10 w-10 rounded-full">
+                  <span class="text-pink-600">Yupaychay</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-700 font-medium transition-colors">Home</a>
+                <a href="about-us.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">About us</a>
+                <a href="programs.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Programs</a>
+                <a href="blog.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Blog</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Contact</a>
+                <a href="donate.html" class="text-purple-600 hover:text-purple-700 font-bold transition-colors">💜 Donate</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-600 hover:text-green-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="about-us.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">About us</a>
+            <a href="programs.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Programs</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Blog</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+            <a href="donate.html" class="block py-2 px-4 text-sm text-purple-600 hover:bg-gray-100">💜 Donate</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section class="max-w-4xl mx-auto text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+                Your Support Matters
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Every donation, no matter the size, helps us preserve Quechua language and culture, empower youth, and support our community.
+            </p>
+        </section>
+
+        <!-- New Carousel Section -->
+        <section id="carousel" class="py-12 md:py-24 bg-gray-50">
+            <div class="grid grid-cols-2 md:container-cols-2 mx-auto px-4 sm:px-6 lg:px-8 relative lg:gap-12">
+                <div id="carousel-container" class="relative w-full overflow-hidden rounded-2xl shadow-xl">
+                    <!-- Carousel Track: Holds all slides and is translated to show the current slide -->
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-8">
+                        Our Work in Action
+                    </h2>
+
+                    <div id="carousel-track" class="carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-1.jpg" alt="Community Project 1" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-10.jpg" alt="Cultural Workshop" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-11.jpg" alt="Artisan Showcase" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-12.jpg" alt="Artisan Showcasee" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Previous Button -->
+                    <button id="prev-btn" class="absolute top-1/2 left-4 -translate-y-1/2 p-2 bg-white/50 hover:bg-white transition-colors duration-300 rounded-full shadow-lg focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+
+                    <!-- Next Button -->
+                    <button id="next-btn" class="absolute top-1/2 right-4 -translate-y-1/2 p-2 bg-white/50 hover:bg-white transition-colors duration-300 rounded-full shadow-lg focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Dots for Navigation -->
+                    <div id="carousel-dots" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300 active-dot"></button>
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300"></button>
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300"></button>
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300"></button>
+                    </div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="w-full relative pb-[56.25%] overflow-hidden rounded-2xl shadow-lg">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Form Section -->
+        <section class="max-w-xl mx-auto bg-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-6">Make a Difference Today</h2>
+
+            <!-- Donation Options -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
+                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="25">
+                    <span class="block text-2xl font-bold">€25</span>
+                    <span class="block text-sm text-gray-600">Supports a student's textbook</span>
+                </button>
+                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="50">
+                    <span class="block text-2xl font-bold">€50</span>
+                    <span class="block text-sm text-gray-600">Helps an artisan with supplies</span>
+                </button>
+                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="100">
+                    <span class="block text-2xl font-bold">€100</span>
+                    <span class="block text-sm text-gray-600">Funds a youth leadership workshop</span>
+                </button>
+                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="250">
+                    <span class="block text-2xl font-bold">€250</span>
+                    <span class="block text-sm text-gray-600">Sponsors a full language course</span>
+                </button>
+                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="500">
+                    <span class="block text-2xl font-bold">€500</span>
+                    <span class="block text-sm text-gray-600">Supports a community festival</span>
+                </button>
+                <button id="other-amount-btn" class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center">
+                    <span class="block text-2xl font-bold">Other</span>
+                    <span class="block text-sm text-gray-600">Choose your amount</span>
+                </button>
+            </div>
+
+            <!-- Custom Amount Input -->
+            <div id="other-amount-input-group" class="mb-6 hidden">
+                <label for="other-amount" class="block text-sm font-medium text-gray-700 mb-2">Enter your amount (€)</label>
+                <input type="number" id="other-amount" min="1" step="1" placeholder="e.g., 75" class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors">
+            </div>
+
+            <button id="donate-button" class="w-full bg-purple-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
+                ✨ Donate Now
+            </button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+            <!-- Left side: Logo -->
+            <div class="flex-shrink-0 mb-4 sm:mb-0">
+                <a href="index.html">
+                    <img src="logo.png" alt="Yupaychay | Quechua Network" class="h-24 w-24 rounded-full border-2 border-green-500 transition-transform transform hover:scale-110">
+                </a>
+            </div>
+
+            <!-- Right side: Contact Info, Social Icons, and Copyright -->
+            <div class="flex flex-col items-center sm:items-end space-y-4">
+                <!-- Social Icons -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.facebook.com/yupaychay.quechua" target="_blank" aria-label="Facebook">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.477 2 2 6.484 2 12.0176C2 17.062 5.61 21.3061 10.55 21.9424V14.2982H7.54589V11.1611H10.55V8.87766C10.55 5.89736 12.3384 4.19539 15.1118 4.19539C16.4021 4.19539 17.5147 4.29371 17.9042 4.34145V7.12644H16.1432C14.6548 7.12644 14.3644 8.04604 14.3644 9.07908V11.1611H17.8174L17.377 14.2982H14.3644V21.9424C19.3044 21.3061 22.9144 17.062 22.9144 12.0176C22.9144 6.484 18.4378 2 12 2Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/yupaychay.quechua" target="_blank" aria-label="Twitter">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.761 24 24 21.761 24 19V5C24 2.239 21.761 0 19 0ZM17.426 9.388C17.426 9.585 17.426 9.782 17.426 9.98C17.426 15.631 13.065 22.067 5.756 22.067C3.593 22.067 1.558 21.411 0 20.252C0.322 20.288 0.643 20.305 0.965 20.305C2.868 20.305 4.646 19.673 6.04 18.571C4.249 18.535 2.768 17.409 2.115 15.823C2.368 15.86 2.621 15.877 2.873 15.877C3.255 15.877 3.637 15.823 4.001 15.716C2.083 15.285 0.65 13.528 0.65 11.455V11.402C1.206 11.71 1.84 11.859 2.506 11.896C1.493 11.233 0.812 10.05 0.812 8.718C0.812 8.086 0.971 7.481 1.259 6.946C3.394 9.531 6.579 11.233 10.158 11.413C9.976 10.669 9.873 9.897 9.873 9.11C9.873 6.814 11.668 5.019 13.964 5.019C15.158 5.019 16.236 5.517 17.063 6.329C18.067 6.136 19.011 5.77 19.866 5.253C19.535 6.276 18.846 7.156 17.96 7.691C18.84 7.59 19.689 7.375 20.468 7.078C19.951 7.915 19.295 8.653 18.541 9.245C17.96 9.508 17.681 9.508 17.426 9.388Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/yupaychay.quechua" target="_blank" aria-label="Instagram">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.607 1.496 4.755 4.748.058 1.265.069 1.645.069 4.849 0 3.204-.012 3.584-.069 4.849-.148 3.252-1.496 4.607-4.748 4.755-1.265.058-1.645.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.252-.148-4.607-1.496-4.755-4.748-.058-1.265-.069-1.645-.069-4.849 0-3.204.012-3.584.069-4.849.148-3.252 1.496-4.607 4.748-4.755 1.265-.058 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.21-6.78 2.62-7.001 6.983-.057 1.28-.071 1.688-.071 4.947 0 3.259.014 3.668.072 4.947.21 4.358 2.62 6.78 6.983 7.001 1.28.057 1.688.071 4.947.071 3.259 0 3.668-.014 4.947-.072 4.354-.21 6.78-2.619 6.981-6.981.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.947-.19-4.355-2.62-6.78-6.981-7.001-1.28-.058-1.68-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.44-.645 1.44-1.44s-.645-1.44-1.44-1.44z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" aria-label="WhatsApp">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12.04 2C7.309 2 3.402 5.912 3.402 10.643c0 1.838.57 3.593 1.61 5.074L3 21.03l5.52-1.453a8.553 8.553 0 003.52 0.817c4.73 0 8.636-3.912 8.636-8.643S16.77 2 12.04 2zm0 15.658a7.016 7.016 0 01-3.693-.996l-.265-.157-2.754.724.73-2.67-.174-.277A7.01 7.01 0 015.013 10.644c0-3.868 3.16-7.028 7.027-7.028s7.028 3.16 7.028 7.028-3.16 7.027-7.028 7.027zm3.17-5.048c-.174-.087-.97-.478-1.12-.533-.15-.055-.258-.082-.365.082-.108.164-.417.533-.51.642-.093.109-.187.12-.345.04-.158-.08-.667-.246-1.267-.783-.467-.406-.782-.916-.87-.963-.087-.048-.009-.074.065-.087.058-.01.12-.02.18-.03-.09-.25-.197-.478-.293-.653-.097-.175-.89-.04-.978-.06-.09-.022-.246-.02-.34-.02-.098 0-.256-.002-.395.14-.14.143-.53 2.585 1.574 3.737 2.094 1.152 2.094 1.05 2.115 1.05.108 0 .53-.01.603-.046.732-.204 1.12-.89 1.28-1.17.155-.282.355-.386.53-.475z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- Contact Information -->
+                <div class="flex items-center space-x-4">
+                    <!-- <a href="tel:+435512345XX" class="text-sm text-white hover:text-green-400 transition-colors duration-300">Contact form</a> -->
+                    <a href="mailto:yupaychay.quechua@gmail.com" class="text-sm text-white hover:text-green-400 transition-colors duration-300">yupaychay.quechua@gmail.com</a>
+                </div>
+                
+                <!-- Copyright -->
+                <p class="text-sm text-white mt-4 sm:mt-0">&copy; 2025 Yupaychay. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for mobile menu toggle -->
+    <script src="js/menu.js"></script>
+
+    <!-- Script for carousel and donation amounts -->
+    <script>
+        // --- Carousel JavaScript ---
+        const donationOptions = document.querySelectorAll('.donation-option');
+        const otherAmountBtn = document.getElementById('other-amount-btn');
+        const otherAmountInputGroup = document.getElementById('other-amount-input-group');
+        const donateButton = document.getElementById('donate-button');
+        const carouselTrack = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dotsContainer = document.getElementById('carousel-dots');
+        const slides = Array.from(carouselTrack.children);
+        const slideCount = slides.length;
+        let currentIndex = 0;
+        let carouselInterval;
+
+        // Function to show a specific slide
+        const showSlide = (index) => {
+            // Update currentIndex to handle wrapping around
+            if (index >= slideCount) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slideCount - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            // Move the carousel track to show the current slide
+            carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            // Update active dot
+            updateDots();
+        };
+
+        // Function to update the active dot
+        const updateDots = () => {
+            const dots = dotsContainer.children;
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active-dot', 'bg-white', 'opacity-100');
+                dots[i].classList.add('bg-white', 'opacity-50');
+            }
+            dots[currentIndex].classList.add('active-dot', 'bg-white', 'opacity-100');
+            dots[currentIndex].classList.remove('opacity-50');
+        };
+        
+        // Function to start the automatic carousel
+        const startAutoplay = () => {
+            carouselInterval = setInterval(() => {
+                showSlide(currentIndex + 1);
+            }, 3000); // Change slide every 3 seconds
+        };
+
+        // Function to stop the automatic carousel
+        const stopAutoplay = () => {
+            clearInterval(carouselInterval);
+        };
+
+        // Add event listeners for navigation buttons
+        nextBtn.addEventListener('click', () => {
+            stopAutoplay(); // Stop autoplay on user interaction
+            showSlide(currentIndex + 1);
+            startAutoplay(); // Restart autoplay
+        });
+
+        prevBtn.addEventListener('click', () => {
+            stopAutoplay(); // Stop autoplay on user interaction
+            showSlide(currentIndex - 1);
+            startAutoplay(); // Restart autoplay
+        });
+
+        // Add event listeners for dot navigation
+        dotsContainer.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                stopAutoplay(); // Stop autoplay on user interaction
+                const dots = Array.from(dotsContainer.children);
+                const dotIndex = dots.indexOf(e.target);
+                if (dotIndex !== -1) {
+                    showSlide(dotIndex);
+                }
+                startAutoplay(); // Restart autoplay
+            }
+        });
+
+        // Initialize the carousel on load
+        window.onload = () => {
+            showSlide(0);
+            startAutoplay();
+        };
+
+        // Donation form logic
+        let selectedAmount = null;
+
+        donationOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                donationOptions.forEach(o => o.classList.remove('selected', 'border-green-600', 'bg-green-50'));
+                option.classList.add('selected', 'border-green-600', 'bg-green-50');
+
+                if (option.id === 'other-amount-btn') {
+                    otherAmountInputGroup.classList.remove('hidden');
+                    const otherAmountInput = document.getElementById('other-amount');
+                    selectedAmount = otherAmountInput.value || null;
+                    // Listen for input changes on the 'other' field
+                    otherAmountInput.addEventListener('input', () => {
+                        selectedAmount = otherAmountInput.value;
+                    });
+                } else {
+                    otherAmountInputGroup.classList.add('hidden');
+                    selectedAmount = option.dataset.amount;
+                }
+                updateDonateButtonText();
+            });
+        });
+        
+        // This is the updated code to handle the donation process
+        donateButton.addEventListener('click', () => {
+            if (!selectedAmount) {
+                // Using a custom modal or message box instead of alert()
+                alert('Please select a donation amount or enter a custom amount.');
+                return;
+            }
+
+            // Replace 'YOUR_PAYPAL_BUSINESS_ID' with your actual PayPal email or merchant ID.
+            const paypalBusinessId = 'YOUR_PAYPAL_BUSINESS_ID';
+            const donationUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalBusinessId)}&item_name=Donation&amount=${encodeURIComponent(selectedAmount)}&currency_code=USD`;
+
+            // Redirect the user to the PayPal donation page
+            window.location.href = donationUrl;
+        });
+
+        function updateDonateButtonText() {
+            if (selectedAmount) {
+                donateButton.textContent = `Donate €${selectedAmount} Now`;
+            } else {
+                donateButton.textContent = 'Donate Now';
+            }
+        }
+
+    </script>
+</body>
+</html>

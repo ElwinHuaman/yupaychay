@@ -163,47 +163,18 @@
             </div>
         </section>
 
-        <!-- Donation Form Section -->
-        <section class="max-w-xl mx-auto bg-white p-8 rounded-3xl shadow-xl">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-6">Make a Difference Today</h2>
-
-            <!-- Donation Options -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
-                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="25">
-                    <span class="block text-2xl font-bold">€25</span>
-                    <span class="block text-sm text-gray-600">Supports a student's textbook</span>
-                </button>
-                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="50">
-                    <span class="block text-2xl font-bold">€50</span>
-                    <span class="block text-sm text-gray-600">Helps an artisan with supplies</span>
-                </button>
-                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="100">
-                    <span class="block text-2xl font-bold">€100</span>
-                    <span class="block text-sm text-gray-600">Funds a youth leadership workshop</span>
-                </button>
-                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="250">
-                    <span class="block text-2xl font-bold">€250</span>
-                    <span class="block text-sm text-gray-600">Sponsors a full language course</span>
-                </button>
-                <button class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center" data-amount="500">
-                    <span class="block text-2xl font-bold">€500</span>
-                    <span class="block text-sm text-gray-600">Supports a community festival</span>
-                </button>
-                <button id="other-amount-btn" class="donation-option bg-gray-100 text-gray-800 p-4 rounded-xl border-2 border-transparent hover:border-green-600 transition-colors text-center">
-                    <span class="block text-2xl font-bold">Other</span>
-                    <span class="block text-sm text-gray-600">Choose your amount</span>
-                </button>
+        <!-- Main Content Grid -->
+        <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-10 mb-16 grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-12">
+            <!-- Google Form Section -->
+            <div class="lg:order-1">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center lg:text-center">
+                    Send Us a Message
+                </h2>
+                <!-- Replace the 'src' attribute below with the embed URL from your own Google Form -->
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegnAgMDC9XDyAGHVNCmPpoJ2b4bYdXWT9QZxu7lgvnAlqV-g/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+                <iframe src="https://www.paypal.com/donate/?hosted_button_id=KHPEQU9LS9CGW&embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>    
+                
             </div>
-
-            <!-- Custom Amount Input -->
-            <div id="other-amount-input-group" class="mb-6 hidden">
-                <label for="other-amount" class="block text-sm font-medium text-gray-700 mb-2">Enter your amount (€)</label>
-                <input type="number" id="other-amount" min="1" step="1" placeholder="e.g., 75" class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors">
-            </div>
-
-            <button id="donate-button" class="w-full bg-purple-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
-                ✨ Donate Now
-            </button>
         </section>
     </main>
 

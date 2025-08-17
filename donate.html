@@ -157,9 +157,16 @@
                 <input type="number" id="other-amount" min="1" step="1" placeholder="e.g., 75" class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors">
             </div>
 
-            <button id="donate-button" class="w-full bg-purple-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
-                ✨ Donate Now ✨
-            </button>
+            <button id="donate-button" class="w-full bg-purple-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300 mb-12">
+                👉 Donate Now 👈
+            </button>            
+            <!-- NEW Engaging Donate Button -->
+            <a href="https://www.paypal.com/donate/?hosted_button_id=KHPEQU9LS9CGW" target="_blank"
+            class="inline-block px-8 py-4 text-sm font-bold text-blue bg-white-600 rounded-full shadow-lg
+                   hover:bg-blue-200 hover:scale-105 transform transition-all duration-300
+                   focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+                Or directly via 👇 <img src="img/PayPal.svg" alt="Donate via Paypal"/>                
+            </a>
         </section>
     </main>
 
@@ -263,7 +270,7 @@
 
         function updateDonateButtonText() {
             if (selectedAmount) {
-                donateButton.textContent = `✨ Donate €${selectedAmount} Now ✨`;
+                donateButton.textContent = `✨👉 Donate €${selectedAmount} Now 👈✨`;
             } else {
                 donateButton.textContent = '✨ Donate Now ✨';
             }

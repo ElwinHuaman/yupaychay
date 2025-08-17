@@ -111,10 +111,54 @@
 
         <!-- New Carousel Section -->
         <section id="carousel" class="py-12 md:py-24 bg-gray-50">
-            <div class="grid grid-cols-1 md:container-cols-2 mx-auto px-4 sm:px-6 lg:px-8 relative lg:gap-12">                
+            <div class="grid grid-cols-2 md:container-cols-2 mx-auto px-4 sm:px-6 lg:px-8 relative lg:gap-12">
+                <div id="carousel-container" class="relative w-full overflow-hidden rounded-2xl shadow-xl">
+                    <!-- Carousel Track: Holds all slides and is translated to show the current slide -->
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-8">
+                        Our Work in Action
+                    </h2>
+
+                    <div id="carousel-track" class="carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-1.jpg" alt="Community Project 1" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-10.jpg" alt="Cultural Workshop" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-11.jpg" alt="Artisan Showcase" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide">
+                            <img src="img/yupaychay-12.jpg" alt="Artisan Showcasee" class="w-full h-auto object-cover rounded-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Previous Button -->
+                    <button id="prev-btn" class="absolute top-1/2 left-4 -translate-y-1/2 p-2 bg-white/50 hover:bg-white transition-colors duration-300 rounded-full shadow-lg focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+
+                    <!-- Next Button -->
+                    <button id="next-btn" class="absolute top-1/2 right-4 -translate-y-1/2 p-2 bg-white/50 hover:bg-white transition-colors duration-300 rounded-full shadow-lg focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Dots for Navigation -->
+                    <div id="carousel-dots" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300 active-dot"></button>
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300"></button>
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300"></button>
+                        <button class="w-3 h-3 bg-white opacity-50 rounded-full transition-opacity duration-300"></button>
+                    </div>
+                </div>
+
                 <!-- Video Section -->
                 <div class="w-full relative pb-[56.25%] overflow-hidden rounded-2xl shadow-lg">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/CZX562Gw_RM?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
                 </div>
             </div>
         </section>
@@ -158,7 +202,7 @@
             </div>
 
             <button id="donate-button" class="w-full bg-purple-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
-                ✨ Donate Now ✨
+                ✨ Donate Now
             </button>
         </section>
     </main>
@@ -220,7 +264,88 @@
         const otherAmountBtn = document.getElementById('other-amount-btn');
         const otherAmountInputGroup = document.getElementById('other-amount-input-group');
         const donateButton = document.getElementById('donate-button');
+        const carouselTrack = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dotsContainer = document.getElementById('carousel-dots');
+        const slides = Array.from(carouselTrack.children);
+        const slideCount = slides.length;
+        let currentIndex = 0;
+        let carouselInterval;
+
+        // Function to show a specific slide
+        const showSlide = (index) => {
+            // Update currentIndex to handle wrapping around
+            if (index >= slideCount) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slideCount - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            // Move the carousel track to show the current slide
+            carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            // Update active dot
+            updateDots();
+        };
+
+        // Function to update the active dot
+        const updateDots = () => {
+            const dots = dotsContainer.children;
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active-dot', 'bg-white', 'opacity-100');
+                dots[i].classList.add('bg-white', 'opacity-50');
+            }
+            dots[currentIndex].classList.add('active-dot', 'bg-white', 'opacity-100');
+            dots[currentIndex].classList.remove('opacity-50');
+        };
         
+        // Function to start the automatic carousel
+        const startAutoplay = () => {
+            carouselInterval = setInterval(() => {
+                showSlide(currentIndex + 1);
+            }, 3000); // Change slide every 3 seconds
+        };
+
+        // Function to stop the automatic carousel
+        const stopAutoplay = () => {
+            clearInterval(carouselInterval);
+        };
+
+        // Add event listeners for navigation buttons
+        nextBtn.addEventListener('click', () => {
+            stopAutoplay(); // Stop autoplay on user interaction
+            showSlide(currentIndex + 1);
+            startAutoplay(); // Restart autoplay
+        });
+
+        prevBtn.addEventListener('click', () => {
+            stopAutoplay(); // Stop autoplay on user interaction
+            showSlide(currentIndex - 1);
+            startAutoplay(); // Restart autoplay
+        });
+
+        // Add event listeners for dot navigation
+        dotsContainer.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                stopAutoplay(); // Stop autoplay on user interaction
+                const dots = Array.from(dotsContainer.children);
+                const dotIndex = dots.indexOf(e.target);
+                if (dotIndex !== -1) {
+                    showSlide(dotIndex);
+                }
+                startAutoplay(); // Restart autoplay
+            }
+        });
+
+        // Initialize the carousel on load
+        window.onload = () => {
+            showSlide(0);
+            startAutoplay();
+        };
+
         // Donation form logic
         let selectedAmount = null;
 
@@ -263,9 +388,9 @@
 
         function updateDonateButtonText() {
             if (selectedAmount) {
-                donateButton.textContent = `✨ Donate €${selectedAmount} Now ✨`;
+                donateButton.textContent = `Donate €${selectedAmount} Now`;
             } else {
-                donateButton.textContent = '✨ Donate Now ✨';
+                donateButton.textContent = 'Donate Now';
             }
         }
 

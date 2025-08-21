@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quechua-English Learning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quechua-English Learning App</h1>
+        </header>
+        
+        <div class="tabs">
+            <button class="tab-button active" data-tab="read">Ñawinchay (READ)</button>
+            <button class="tab-button" data-tab="listen">Uyariy (LISTEN)</button>
+            <button class="tab-button" data-tab="write">Qillqay (WRITE)</button>
+        </div>
+        
+        <div class="tab-content">
+            <!-- READ Tab -->
+            <div id="read" class="tab-pane active">
+                <h2>Ñawinchay (READ)</h2>
+                <p>Strengthen your word recognition and reading skills.</p>
+                
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="flashcard-front">
+                            <h3 id="read-english-word">English Word</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <h3 id="read-quechua-word">Quechua Word</h3>
+                            <p>IPA: <span id="read-ipa"></span></p>
+                            <p>Syllables: <span id="read-syllables"></span></p>
+                            <button id="read-audio-btn" class="audio-btn">Play Audio</button>
+                        </div>
+                    </div>
+                    <button id="flip-card-btn" class="action-btn">Flip Card</button>
+                    <button id="next-card-btn" class="action-btn">Next Card</button>
+                </div>
+                
+                <div class="quiz-container">
+                    <h3>Quiz Mode</h3>
+                    <p>Match the Quechua word to the English gloss:</p>
+                    <div id="read-quiz-question"></div>
+                    <div id="read-quiz-options" class="quiz-options"></div>
+                    <div id="read-quiz-feedback" class="feedback"></div>
+                    <button id="read-quiz-next" class="action-btn">Next Question</button>
+                </div>
+            </div>
+            
+            <!-- LISTEN Tab -->
+            <div id="listen" class="tab-pane">
+                <h2>Uyariy (LISTEN)</h2>
+                <p>Improve your listening comprehension.</p>
+                
+                <div class="listen-container">
+                    <h3>Audio Playback</h3>
+                    <p>Listen to the Quechua word and select the correct English translation:</p>
+                    <button id="listen-play-audio" class="audio-btn">Play Audio</button>
+                    <div id="listen-options" class="quiz-options"></div>
+                    <div id="listen-feedback" class="feedback"></div>
+                    <button id="listen-next" class="action-btn">Next Word</button>
+                </div>
+                
+                <div class="challenge-container">
+                    <h3>Challenge Mode</h3>
+                    <p>Identify the correct audio for the Quechua word:</p>
+                    <div id="challenge-word" class="challenge-word"></div>
+                    <div id="challenge-audio-options" class="audio-options"></div>
+                    <div id="challenge-feedback" class="feedback"></div>
+                    <button id="challenge-next" class="action-btn">Next Challenge</button>
+                </div>
+            </div>
+            
+            <!-- WRITE Tab -->
+            <div id="write" class="tab-pane">
+                <h2>Qillqay (WRITE)</h2>
+                <p>Master spelling and IPA/syllable awareness.</p>
+                
+                <div class="write-container">
+                    <h3>Guided Writing</h3>
+                    <div class="word-display">
+                        <p>Quechua: <span id="write-quechua"></span></p>
+                        <p>English: <span id="write-english"></span></p>
+                        <p>IPA: <span id="write-ipa"></span></p>
+                        <p>Syllables: <span id="write-syllables"></span></p>
+                        <button id="write-audio-btn" class="audio-btn">Play Audio</button>
+                    </div>
+                </div>
+                
+                <div class="quiz-container">
+                    <h3>Quiz Mode</h3>
+                    <p>Fill in the missing syllable:</p>
+                    <div id="syllable-quiz" class="syllable-quiz"></div>
+                    <input type="text" id="syllable-answer" placeholder="Type the missing syllable">
+                    <button id="syllable-check" class="action-btn">Check Answer</button>
+                    <div id="syllable-feedback" class="feedback"></div>
+                    <button id="syllable-next" class="action-btn">Next Question</button>
+                </div>
+                
+                <div class="challenge-container">
+                    <h3>Challenge Mode</h3>
+                    <p>Listen and write the complete word:</p>
+                    <button id="challenge-write-audio" class="audio-btn">Play Audio</button>
+                    <input type="text" id="challenge-write-answer" placeholder="Type the Quechua word">
+                    <button id="challenge-write-check" class="action-btn">Check Answer</button>
+                    <div id="challenge-write-feedback" class="feedback"></div>
+                    <button id="challenge-write-next" class="action-btn">Next Challenge</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Quechua-English Language Learning App</p>
+    </footer>
+    
+    <audio id="audio-player"></audio>
+    
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

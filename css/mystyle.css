@@ -29,6 +29,10 @@ body {
     background-image: url('https://yupaychay.org/img/yupaychay-17.jpg');
 }
 
+.hero-where-bg {
+    background-image: url('https://yupaychay.org/img/yupaychay-15.jpg');
+}
+
 .carousel-item {
     display: none;
 }

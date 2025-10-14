@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpanas selber machen | Yupaychay Quechua Network</title>
+    <link rel="icon" type="image/png" href="logo.ico">
+    <!-- Primary Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="robots" content="index, follow"> <!-- Search engine indexing -->
+    <meta name="revisit-after" content="7 days"> <!-- Crawler revisit suggestion -->
+    <meta name="author" content="Yupaychay">
+    <meta name="copyright" content="© 2025 Yupaychay.org">
+    <meta name="theme-color" content="#43A047"> <!-- Mobile browser theme color -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Yupaychay support Quechua communities emancipation by sharing their work, language, and culture, bridgin the Andes with the world.">
+    <meta name="keywords" content="Quechua, Quechua language, Indigenous culture, Andes, Peru, Puno, cultural preservation, nonprofit, donate">
+    <meta name="subject" content="Quechua communities, language, and tradition">
+    <!-- Required OG Tags -->
+    <meta property="og:title" content="Yupaychay | Quechua Network: Preserving Culture & Language">
+    <meta property="og:description" content="Yupaychay empowers Quechua communities to thrive in the world.">
+    <meta property="og:url" content="https://yupaychay.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Yupaychay">
+
+    <!-- OG Image (1200x630px recommended) -->
+    <meta property="og:image" content="https://yupaychay.org/img/yupaychay-social.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Connecting the Heart of the Andes">
+
+    <!-- Optional OG Tags -->
+    <meta property="og:locale" content="en_PE"> <!-- English-Peru -->
+    <meta property="og:locale:alternate" content="en_PE"> <!-- Quechua-Peru -->
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:description" content="Yupaychay support Quechua communities emancipation by sharing their work, language, and culture, bridgin the Andes with the world.">
+    <meta name="twitter:image" content="https://yupaychay.org/img/yupaychay-social.jpg">
+    <meta name="twitter:image:alt" content="Connecting the Heart of the Andes">
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="Mp1xG0Tn9qH3BzXiz0sciYvZc1B3NKhP3VlG00V_UrI" />
+
+    <script src="https://cdn.tailwindcss.com"></script>    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #4B5563;
+        }
+        /* Custom styles for the blog post content to make it readable */
+        .prose p {
+            margin-bottom: 1.25rem;
+        }
+        .prose h1, .prose h2, .prose h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        /* Custom CSS for the carousel, overriding Tailwind's defaults */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem; /* rounded-3xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-slide {
+            flex-shrink: 0;
+            width: 100%;
+        }
+    </style>
+    <!-- Essential SEO Schema.org Markup -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Yupaychay Quechua Network",
+          "url": "http://yupaychay.org/",
+          "logo": "http://yupaychay.org/logo.png",
+          "sameAs": [
+            "https://www.facebook.com/yupaychay.quechua",
+            "https://twitter.com/yupaychay.quechua",
+            "https://www.instagram.com/yupaychay.quechua"
+          ]
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex-shrink-0">
+                <a href="../index.html" class="flex items-center space-x-1 text-2xl font-bold">
+                  <img src="../logo.png" alt="Yupaychay | Quechua Network" class="h-10 w-10 rounded-full">
+                  <span class="text-pink-600">Yupaychay</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="text-gray-600 hover:text-green-700 font-medium transition-colors">Home</a>
+                <a href="../about-us.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">About us</a>
+                <a href="../programs.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Programs</a>
+                <a href="../where.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Where</a>
+                <a href="../blog.html" class="text-green-600 hover:text-green-600 font-bold transition-colors">Blog</a>
+                <a href="../contact.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors">Contact</a>
+                <a href="../donate.html" class="text-purple-600 hover:text-purple-700 font-medium transition-colors">💜 Donate</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-600 hover:text-green-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm">
+            <a href="../index.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="../about-us.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">About us</a>
+            <a href="../programs.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Programs</a>
+            <a href="../where.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Where</a>
+            <a href="../blog.html" class="block py-2 px-4 text-sm text-green-600 hover:bg-gray-100">Blog</a>
+            <a href="../contact.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+            <a href="../donate.html" class="block py-2 px-4 text-sm text-purple-600 hover:bg-gray-100">💜 Donate</a>
+        </div>
+    </header>
+
+
+    <!-- Blog Post Content -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <article class="max-w-4xl mx-auto">
+            <!-- Blog Post Header with updated title and subtitle -->
+            <div class="text-center mb-10">
+                <a href="../blog.html" class="text-green-600 hover:underline mb-4 inline-block">← Back to all posts</a>
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Simpanas selber machen</h1>
+                <p class="text-gray-600 text-lg mb-4">Trénzate como cholita 👧</p>
+                <div class="text-sm text-gray-500">
+                    <time datetime="2025-08-29">Oct 17, 2025</time>
+                    <span class="mx-2">&bull;</span>
+                    <span>2 min read</span>
+                </div>
+            </div>
+            
+            <!-- Main Content Sections -->
+            <!-- Artisan Markets Section -->
+            <section id="artisan" class="mb-20">
+                <div class="md:flex md:space-x-12 items-center flex-row-reverse gap-8">
+                    <!-- <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="img/yupaychay-16.jpg" alt="Artisan showcasing textiles at an European market" class="rounded-3xl shadow-lg w-full">
+                    </div> -->
+
+                    <div class="md:w-1/2">
+                        <img src="http://yupaychay.org/img/yupaychay-event-2.png" alt="Yupaychay event in Innsbruck" class="w-full h-auto object-cover rounded-2xl shadow-xl">
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-green-600 font-semibold uppercase tracking-widest mb-2">✂️🧶 Workshop</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                            Simpanas - Trénzate como cholita 👧
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            In diesem Workshop stellen wir gemeinsam Simpanas her - den traditionellen Haarschmuck, den die Quechua-Frauen mit Stolz tragen. Jede Farbe, jede Form erzählt eine Geschichte. 🪢
+                        </p>
+                        <p class="text-lg text-gray-600 mb-4">
+                            🧭 Ziel: ein Symbol der indigenen Kultur Südamerikas weiterzugeben, um das überlieferte Wissen und die Schönheit dieser uralten Tradition zu bewahren.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                            <li>Einführung in die Bedeutung der Simpanas</li>
+                            <li>Anleitung zum traditionellen Flechten</li>
+                            <li>Herstellung deiner eigenen Simpana</li>
+                            <li>Austausch über indigene Kultur & Symbolik</li>
+                        </ul>
+                        <a href="https://forms.gle/zVw6EYm8onEc2duR8" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
+                            Register for the event ✨
+                        </a>
+
+                        <!-- Highlight Feature -->
+                        <div class="mt-8 p-6 bg-gray-100 rounded-2xl shadow-inner">
+                            <h3 class="font-bold mb-1">⚠️ Bringe mit:</h3>
+                            <p class="text-sm text-gray-600 mb-1">
+                                ✅ deine eigene (Baum)Wolle (verschiedene Farben, mind. 100g)                                
+                            </p>
+                            <p class="text-sm text-gray-600 mb-1">
+                                ✅ einen Häkelnadel & Wollnadel, wenn Du einen hast
+                            </p>                                                
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Share Buttons Section -->
+            <section id="social-media" class="text-center my-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Share this Post</h2>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-colors" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.959.192-1.333 1.58-1.333h2.42v-3.411c-.471-.059-1.055-.089-2.02-.089-2.909 0-4.041 1.748-4.041 4.106v1.894z"/></svg>
+                    </a>
+                    <a href="#" class="bg-gray-800 hover:bg-black text-white p-3 rounded-full shadow-lg transition-colors" onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href), '_blank'); return false;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.197 0-5.498 2.768-4.992 6.444-4.832-.237-9.14-2.56-12.008-6.124-.505.874-.793 1.884-.793 2.97 0 2.05.981 3.869 2.478 4.93-.912-.03-1.774-.28-2.534-.69-.001.025-.001.05-.001.076 0 2.99 2.158 5.485 5.025 6.05-.53.146-1.09.202-1.66.202-.407 0-.806-.04-1.196-.11.799 2.491 3.109 4.298 5.864 4.349-2.112 1.949-4.76 3.129-7.65 3.129-.497 0-.991-.03-1.48-.087 3.064 1.956 6.757 3.102 10.686 3.102 12.825 0 19.916-10.74 19.916-20.083z"/></svg>
+                    </a>
+                    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full shadow-lg transition-colors" onclick="window.open('https://www.instagram.com/', '_blank'); return false;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.644.07 4.85s-.012 3.584-.07 4.85c-.148 3.228-1.667 4.746-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.77-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.746 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.204-6.78 2.628-6.989 6.987-.059 1.28-.073 1.688-.073 4.947 0 3.259.014 3.668.072 4.948.204 4.358 2.628 6.78 6.987 6.989 1.28.058 1.688.073 4.947.073s3.668-.014 4.948-.073c4.358-.204 6.78-2.628 6.989-6.987.058-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.073-4.947-.204-4.358-2.628-6.782-6.987-6.989-1.28-.058-1.689-.073-4.948-.073z"/></svg>
+                    </a>
+                </div>
+            </section>
+            <div class="text-center mb-10">
+                <a href="../blog.html" class="text-green-600 hover:underline mb-4 inline-block">← Back to all posts</a>                
+            </div>
+        </article>
+    </main>
+
+    <!-- Custom Message Box -->
+    <div id="messageBox"></div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+            <!-- Left side: Logo -->
+            <div class="flex-shrink-0 mb-4 sm:mb-0">
+                <a href="../index.html">
+                    <img src="../logo.png" alt="Yupaychay | Quechua Network" class="h-24 w-24 rounded-full border-2 border-green-500 transition-transform transform hover:scale-110">
+                </a>
+            </div>
+
+            <!-- Right side: Contact Info, Social Icons, and Copyright -->
+            <div class="flex flex-col items-center sm:items-end space-y-4">
+                <!-- Social Icons -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.facebook.com/yupaychay.quechua" target="_blank" aria-label="Facebook">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.477 2 2 6.484 2 12.0176C2 17.062 5.61 21.3061 10.55 21.9424V14.2982H7.54589V11.1611H10.55V8.87766C10.55 5.89736 12.3384 4.19539 15.1118 4.19539C16.4021 4.19539 17.5147 4.29371 17.9042 4.34145V7.12644H16.1432C14.6548 7.12644 14.3644 8.04604 14.3644 9.07908V11.1611H17.8174L17.377 14.2982H14.3644V21.9424C19.3044 21.3061 22.9144 17.062 22.9144 12.0176C22.9144 6.484 18.4378 2 12 2Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/yupaychay.quechua" target="_blank" aria-label="Twitter">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.761 24 24 21.761 24 19V5C24 2.239 21.761 0 19 0ZM17.426 9.388C17.426 9.585 17.426 9.782 17.426 9.98C17.426 15.631 13.065 22.067 5.756 22.067C3.593 22.067 1.558 21.411 0 20.252C0.322 20.288 0.643 20.305 0.965 20.305C2.868 20.305 4.646 19.673 6.04 18.571C4.249 18.535 2.768 17.409 2.115 15.823C2.368 15.86 2.621 15.877 2.873 15.877C3.255 15.877 3.637 15.823 4.001 15.716C2.083 15.285 0.65 13.528 0.65 11.455V11.402C1.206 11.71 1.84 11.859 2.506 11.896C1.493 11.233 0.812 10.05 0.812 8.718C0.812 8.086 0.971 7.481 1.259 6.946C3.394 9.531 6.579 11.233 10.158 11.413C9.976 10.669 9.873 9.897 9.873 9.11C9.873 6.814 11.668 5.019 13.964 5.019C15.158 5.019 16.236 5.517 17.063 6.329C18.067 6.136 19.011 5.77 19.866 5.253C19.535 6.276 18.846 7.156 17.96 7.691C18.84 7.59 19.689 7.375 20.468 7.078C19.951 7.915 19.295 8.653 18.541 9.245C17.96 9.508 17.681 9.508 17.426 9.388Z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/yupaychay.quechua" target="_blank" aria-label="Instagram">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.607 1.496 4.755 4.748.058 1.265.069 1.645.069 4.849 0 3.204-.012 3.584-.069 4.849-.148 3.252-1.496 4.607-4.748 4.755-1.265.058-1.645.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.252-.148-4.607-1.496-4.755-4.748-.058-1.265-.069-1.645-.069-4.849 0-3.204.012-3.584.069-4.849.148-3.252 1.496-4.607 4.748-4.755 1.265-.058 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.21-6.78 2.62-7.001 6.983-.057 1.28-.071 1.688-.071 4.947 0 3.259.014 3.668.072 4.947.21 4.358 2.62 6.78 6.983 7.001 1.28.057 1.688.071 4.947.071 3.259 0 3.668-.014 4.947-.072 4.354-.21 6.78-2.619 6.981-6.981.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.947-.19-4.355-2.62-6.78-6.981-7.001-1.28-.058-1.68-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.44-.645 1.44-1.44s-.645-1.44-1.44-1.44z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" aria-label="WhatsApp">
+                        <svg class="w-6 h-6 text-gray-400 hover:text-green-400 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12.04 2C7.309 2 3.402 5.912 3.402 10.643c0 1.838.57 3.593 1.61 5.074L3 21.03l5.52-1.453a8.553 8.553 0 003.52 0.817c4.73 0 8.636-3.912 8.636-8.643S16.77 2 12.04 2zm0 15.658a7.016 7.016 0 01-3.693-.996l-.265-.157-2.754.724.73-2.67-.174-.277A7.01 7.01 0 015.013 10.644c0-3.868 3.16-7.028 7.027-7.028s7.028 3.16 7.028 7.028-3.16 7.027-7.028 7.027zm3.17-5.048c-.174-.087-.97-.478-1.12-.533-.15-.055-.258-.082-.365.082-.108.164-.417.533-.51.642-.093.109-.187.12-.345.04-.158-.08-.667-.246-1.267-.783-.467-.406-.782-.916-.87-.963-.087-.048-.009-.074.065-.087.058-.01.12-.02.18-.03-.09-.25-.197-.478-.293-.653-.097-.175-.89-.04-.978-.06-.09-.022-.246-.02-.34-.02-.098 0-.256-.002-.395.14-.14.143-.53 2.585 1.574 3.737 2.094 1.152 2.094 1.05 2.115 1.05.108 0 .53-.01.603-.046.732-.204 1.12-.89 1.28-1.17.155-.282.355-.386.53-.475z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- Contact Information -->
+                <div class="flex items-center space-x-4">
+                    <!-- <a href="tel:+435512345XX" class="text-sm text-white hover:text-green-400 transition-colors duration-300">Contact form</a> -->
+                    <a href="mailto:yupaychay.quechua@gmail.com" class="text-sm text-white hover:text-green-400 transition-colors duration-300">yupaychay.quechua@gmail.com</a>
+                </div>
+                
+                <!-- Copyright -->
+                <p class="text-sm text-white mt-4 sm:mt-0">&copy; 2025 Yupaychay. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+        
+    <!-- Script for carousel and donation amounts -->
+    <script>
+        // Script for mobile menu toggle 
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Mobile menu toggle
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const carousel = document.getElementById('carousel');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const carouselItems = document.querySelectorAll('#carousel img');
+        const donationOptions = document.querySelectorAll('.donation-option');
+        const otherAmountBtn = document.getElementById('other-amount-btn');
+        const otherAmountInputGroup = document.getElementById('other-amount-input-group');
+        const donateButton = document.getElementById('donate-button');
+
+        let currentIndex = 0;
+        let slideInterval;        
+
+        // Carousel functionality
+        function showSlide(index) {
+            carouselItems.forEach((item, i) => {
+                item.classList.remove('active');
+                if (i === index) {
+                    item.classList.add('active');
+                }
+            });
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % carouselItems.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+            showSlide(currentIndex);
+        }
+
+        function startAutoSlide() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        }
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            startAutoSlide();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            startAutoSlide();
+        });
+
+        // Donation form logic
+        let selectedAmount = null;
+
+        donationOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                donationOptions.forEach(o => o.classList.remove('selected', 'border-green-600', 'bg-green-50'));
+                option.classList.add('selected', 'border-green-600', 'bg-green-50');
+
+                if (option.id === 'other-amount-btn') {
+                    otherAmountInputGroup.classList.remove('hidden');
+                    const otherAmountInput = document.getElementById('other-amount');
+                    selectedAmount = otherAmountInput.value || null;
+                    // Listen for input changes on the 'other' field
+                    otherAmountInput.addEventListener('input', () => {
+                        selectedAmount = otherAmountInput.value;
+                    });
+                } else {
+                    otherAmountInputGroup.classList.add('hidden');
+                    selectedAmount = option.dataset.amount;
+                }
+                updateDonateButtonText();
+            });
+        });
+        
+        // This is the updated code to handle the donation process
+        donateButton.addEventListener('click', () => {
+            if (!selectedAmount) {
+                // Using a custom modal or message box instead of alert()
+                alert('Please select a donation amount or enter a custom amount.');
+                return;
+            }
+
+            // Replace 'YOUR_PAYPAL_BUSINESS_ID' with your actual PayPal email or merchant ID.
+            const paypalBusinessId = 'YOUR_PAYPAL_BUSINESS_ID';
+            const donationUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalBusinessId)}&item_name=Donation&amount=${encodeURIComponent(selectedAmount)}&currency_code=USD`;
+
+            // Redirect the user to the PayPal donation page
+            window.location.href = donationUrl;
+        });
+
+        function updateDonateButtonText() {
+            if (selectedAmount) {
+                donateButton.textContent = `Donate $${selectedAmount} Now`;
+            } else {
+                donateButton.textContent = 'Donate Now';
+            }
+        }
+
+        // Initialize carousel
+        startAutoSlide();
+    </script>
+</body>
+</html>
